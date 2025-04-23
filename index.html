@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel website</title>
+
+    <!-- font awsome link-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+     <!-- css file link-->
+      <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--header start-->
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>S</span>afar<span>S</span>tories</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>&nbsp;
+            <a href="#book">book</a>&nbsp;
+            <!--<a href="#packages">packages</a>&nbsp;-->
+            <!--<a href="#services">services</a>&nbsp;-->
+            <a href="#gallery">gallery</a>&nbsp;
+            <a href="#review">review</a>&nbsp;
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+</header>
+<!--header end-->
+
+<!--login form -->
+
+<div class="login-form-container">
+
+    <i class="fas fa-time" id="form-close"></i>
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter the password">
+        <input type="submit" value="login" class="btn"><br>
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>create new account?<a href="#">create account</a></p>
+    </form>
+</div>
+
+
+
+<!-- js file link-->   
+<script src="script.js"></script> 
+
+
+<!--home section starts-->
+<section class="home" id="home">
+    <div class="content">
+        <h2>adventure is worthwhile</h2>
+        <p >discover new places with us, adventure awaits</p>
+        <a href="#" class="btn" style="background-color: rgb(6, 31, 59);">discover more</a>
+    </div>
+
+    <!--<div class="controls">
+        <span class="vid-btn active" data-src="vid5.mp4"></span>
+        <span class="vid-btn" data-src="vid6.mp4"></span>
+        <span class="vid-btn" data-src="vid4.mp4"></span>
+        <span class="vid-btn" data-src="vid2.mp4"></span>
+    </div>-->
+
+
+    <div class="video-container">
+        <video src="vid5.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+</section>
+<!--home section ends-->
+
+
+<!--book section starts-->
+<section class="book" id="book">
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+
+    </h1>
+    <div class="row">
+        <div class="image">
+            <img src="boook.jpg" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <h3>where to</h3>
+                <input type="text" placeholder="place name">
+            </div>
+            <div class="inputBox">
+                <h3>how many</h3>
+                <input type="number" placeholder="number of guest">
+            </div>
+            <div class="inputBox">
+                <h3>arrivals</h3>
+                <input type="date" >
+            </div>
+            <div class="inputBox">
+                <h3>leaving</h3>
+                <input type="date" >
+            </div>
+
+            <div>
+                <input type="submit" class="btn" value="book now">
+            </div>
+        </form>
+    </div>
+</section>
+
+
+
+<!--book section ends-->
+
+<!-- gallery section starts-->
+
+<section class="gallery" id="gallery">
+    <h1 class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="taj.jpg" alt="">
+            <div class="content">
+                <h3>TAJ MAHAL <BR>INDIA</h3>
+                
+                 <a href="https://en.wikipedia.org/wiki/Taj_Mahal" class="btn">Know more</a>   
+            </div>
+        </div>
+        <div class="box">
+            <img src="hawamahal.jpg" alt="" >
+            <div class="content">
+                <h3>HAWA MAHAL <BR>INDIA</h3>
+                 <a href="https://en.wikipedia.org/wiki/Hawa_Mahal" class="btn">Know more</a>   
+            </div>
+        </div>
+        <div class="box">
+            <img src="maldives.jpeg.jpg" alt="">
+            <div class="content">
+                <h3>MALDIVES</h3>
+                 <a href="https://maldives-magazine.com/top-10/best-places-to-visit-in-maldives.htm" class="btn">Know more</a>   
+            </div>
+        </div>
+        <div class="box">
+            <img src="venice.jpg" alt="">
+            <div class="content">
+                <h3>VENICE</h3>
+                 <a href="https://en.wikipedia.org/wiki/Venice" class="btn">Know more</a>   
+            </div>
+        </div>
+        <div class="box">
+            <img src="kashmir.jpg" alt="">
+            <div class="content">
+                <h3>KASHMIR<BR>INDIA</h3>
+                 <a href="https://en.wikipedia.org/wiki/Kashmir" class="btn">Know more</a>   
+            </div>
+        </div>
+        <div class="box">
+            <img src="brazil.jpg" alt="">
+            <div class="content">
+                <h3>BRAZIL</h3>
+                 <a href="https://en.wikipedia.org/wiki/Brazil" class="btn">Know more</a>   
+            </div>
+        </div>
+        
+    </div>
+</section>
+<!-- gallery section ends-->
+
+<!-- review section starts-->
+
+<section class="review" id="review">
+    <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+    </h1>
+
+    <div class="review-slider">
+        <div class="wrapper">
+            <div class="slider">
+                <div class="box">
+                    <img src="human1.jpg" alt="">
+                    <h3>Riya Deol</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae alias tempore maiores. Tempora alias, facere, sequi quia ipsum minima suscipit rem natus, numquam animi sapiente cum saepe ab officiis non.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider">
+                <div class="box">
+                    <img src="human2.jpg" alt="">
+                    <h3>Paul Sharma</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae alias tempore maiores. Tempora alias, facere, sequi quia ipsum minima suscipit rem natus, numquam animi sapiente cum saepe ab officiis non.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider">
+                <div class="box">
+                    <img src="human3.jpg" alt="">
+                    <h3>Seema Mishra</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae alias tempore maiores. Tempora alias, facere, sequi quia ipsum minima suscipit rem natus, numquam animi sapiente cum saepe ab officiis non.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider">
+                <div class="box">
+                    <img src="human4.png" alt="">
+                    <h3>Rahul Shah</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae alias tempore maiores. Tempora alias, facere, sequi quia ipsum minima suscipit rem natus, numquam animi sapiente cum saepe ab officiis non.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- review section ends-->
+
+<!--contact section starts-->
+
+<section class="contact" id="contact">
+    <h1 class="heading">
+        
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+
+    <div class="row">
+        <div class="image">
+            <img src="contact.png" alt="error">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <input type="text " placeholder="name">
+                <input type="email " placeholder="email">
+            </div>
+            <div class="inputBox">
+                <input type="number " placeholder="number">
+                <input type="text " placeholder="subject">
+            
+            </div>
+            <textarea placeholder="message " name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="send message">
+        </form>
+    </div>
+</section>
+<!--contact section ends-->
+
+</body>
+</html>
